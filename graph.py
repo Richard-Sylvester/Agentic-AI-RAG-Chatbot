@@ -31,7 +31,7 @@ retriever = vectorstore.as_retriever()
 
 # B. Writer (Google) - switched to "Lite" for better limits
 # We use the specific version from your list
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite-001", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
 
 # --- 3. NODES ---
 def retrieve_node(state: AgentState):
